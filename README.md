@@ -1,4 +1,4 @@
 theme
 =====
 
-Wordpress Theme
+Wordpress Theme Template
