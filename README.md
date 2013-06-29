@@ -1,4 +1,4 @@
 theme
 =====
 
-Wordpress Theme Template Po
+Wordpress Theme Template Poo
