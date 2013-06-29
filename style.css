@@ -1,12 +1,58 @@
-/* 
-    Document   : style
-    Created on : Jun 28, 2013, 11:36:41 PM
-    Author     : andyb_000
-    Description:
-        Purpose of the stylesheet follows.
+/*
+Theme Name: LAB Web Designs
+Theme URI: http://www.labwebdesigns.com
+Description: The 2013 LAB Web Designs Theme.
+Author: Andy Bates
+Author URI: http://www.labwebdesigns.com
+Version: 0.1
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
 */
 
-root { 
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+body { 
+    padding-top: 60px; 
+    padding-bottom: 40px; 
+}
+
+#wrapper {
     display: block;
+    border: 1px #000 solid;
+    width:90%;
+    margin:0px auto;
+}
+
+#header {
+    border: 2px #000 solid;
+}
+
+#content {
+    width: 75%;
+    border: 2px #000 solid;
+    float: left;
+}
+
+#sidebar {
+    width: 23%;
+    border: 2px #000 solid;
+    float: right;
+}
+
+#delimiter {
+    clear: both;
+}
+
+#footer {
+    border: 2px #000 solid;
+}
+
+.title {
+    font-size: 11pt;
+    font-family: arial;
+    font-weight: bold;
 }
 
