@@ -1,7 +1,7 @@
 <hr>
 
 <footer>
-    <p>&copy; Company 2012</p>
+    <p>&copy; LAB Web Designs 2008 - <?php echo date("Y"); ?></p>
 </footer>
 
 </div> <!-- /container -->

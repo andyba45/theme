@@ -2,20 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Bootstrap, from Twitter</title>
+        <title><?php bloginfo('site_name') ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
 
         <!-- Le styles -->
-        <link href="<?php bloginfo ( 'stylesheet_url' ); ?>" rel="stylesheet">
-        <style type="text/css">
-            body {
-                padding-top: 60px;
-                padding-bottom: 40px;
-            }
-        </style>
-        <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -28,8 +22,8 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-        <?php wp_enqueue_script ( "jquery" ); ?>
-        <?php wp_head (); ?>
+        <?php wp_enqueue_script("jquery"); ?>
+        <?php wp_head(); ?>
     </head>
 
     <body>
@@ -41,22 +35,37 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <?php wp_list_pages(array('title_li' => '', 'exclude' => 4)); ?>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="navbar-form pull-right">
-                            <input class="span2" type="text" placeholder="Email">
-                            <input class="span2" type="password" placeholder="Password">
-                            <button type="submit" class="btn">Sign in</button>
-                        </form>
-                    </div><!--/.nav-collapse -->
+                    </a>         
+                    <a class="brand" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo2.jpg" alt="LAB Web Logo" class="logo"  /><?php bloginfo('name'); ?></a>
+
+                    <form index.php?fuse=admin&action=Login" method="post" class="navbar-form pull-right">
+                          <input class="span2" type="text" id="email" name="email" value="" placeholder="Email">
+                        <input class="span2" type="password"  id="passed_password" name="passed_password" placeholder="Password">
+                        <button type="submit" class="btn">Sign in</button>
+                    </form>
                 </div>
             </div>
         </div>
 
         <div class="container">
+            <div id="navbar-example" class="navbar navbar-static">
+                <div class="navbar-inner">
+                    <div class="container" style="width: auto;">
+                        <a class="brand" href="#">How can we help you?</a>
+
+                        <ul class="nav" role="navigation">
+                            <?php
+                            wp_nav_menu(array(
+                                'menu' => 'header-menu',
+                                'depth' => 3,
+                                'container' => false,
+                                'menu_class' => 'nav',
+                                'fallback_cb' => 'wp_page_menu',
+                                //Process nav menu using our custom nav walker
+                                'walker' => new wp_bootstrap_navwalker())
+                            );
+                            ?>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- /navbar-example -->
