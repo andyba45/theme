@@ -768,16 +768,16 @@ h1 {
 }
 
 h2 {
-    font-size: 31.5px;
+    font-size: 21.5px;
 }
 
 h3 {
-    font-size: 24.5px;
+    font-size: 18.5px;
     padding: 20px 0;
 }
 
 h4 {
-    font-size: 17.5px;
+    font-size: 14.5px;
 }
 
 h5 {
@@ -4455,7 +4455,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .btn,
 .navbar .btn-group {
-    margin-top: 5px;
+    margin-top: -10px;
 }
 
 .navbar .btn-group .btn,
@@ -4617,7 +4617,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a {
     float: none;
-    padding: 23px 15px 10px;
+    padding: 3px 15px 10px;
     color: #ffffff;
     text-decoration: none;
     text-shadow: 0 1px 0 #000000;

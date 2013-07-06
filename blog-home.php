@@ -24,6 +24,8 @@ get_header(); ?>
 				<h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>  
 
 				<?php the_excerpt(); ?>  
+                               
+                                <hr />
 
 
 <?php endwhile; ?>  
