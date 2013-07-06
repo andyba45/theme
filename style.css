@@ -74,3 +74,48 @@ body {
     padding-left: 20px;
 }
 
+.fp_hosting {
+    
+    padding: 15px 0;
+
+}
+
+.slider_button {
+    float: right;
+}
+
+.php_image {
+    float: right;
+    padding-top: 20px;
+}
+
+.lab_td {
+    text-align: center!important;
+}
+
+.lab_td1 {
+    color: #0044cc;
+    font-weight: bold;
+}
+
+.lab_th {
+    text-align: center!important;
+    color: #0044cc;
+}
+
+.lab_th_span {
+    background-color: #0044cc;
+    color: #ffffff;
+    text-align: center!important;
+}
+
+.lab_img_center {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lab_img_right {
+    float: right;
+    padding: 0px;
+}
+

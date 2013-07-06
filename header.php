@@ -37,23 +37,8 @@
                         <span class="icon-bar"></span>
                     </a>         
                     <a class="brand" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo2.jpg" alt="LAB Web Logo" class="logo"  /><?php bloginfo('name'); ?></a>
-
-                    <form index.php?fuse=admin&action=Login" method="post" class="navbar-form pull-right">
-                          <input class="span2" type="text" id="email" name="email" value="" placeholder="Email">
-                        <input class="span2" type="password"  id="passed_password" name="passed_password" placeholder="Password">
-                        <button type="submit" class="btn">Sign in</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div id="navbar-example" class="navbar navbar-static">
-                <div class="navbar-inner">
-                    <div class="container" style="width: auto;">
-                        <a class="brand" href="#">How can we help you?</a>
-
-                        <ul class="nav" role="navigation">
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
                             <?php
                             wp_nav_menu(array(
                                 'menu' => 'header-menu',
@@ -66,6 +51,9 @@
                             );
                             ?>
                         </ul>
-                    </div>
+                    </div><!--/.nav-collapse -->
                 </div>
-            </div> <!-- /navbar-example -->
+            </div>
+        </div>
+
+        <div class="container">

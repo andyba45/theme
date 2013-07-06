@@ -212,8 +212,9 @@
   .row-fluid:before,
   .row-fluid:after {
     display: table;
-    line-height: 0;
+    line-height: 1em;
     content: "";
+    margin: 9px 0;
   }
   .row-fluid:after {
     clear: both;
@@ -223,6 +224,7 @@
     float: left;
     width: 100%;
     min-height: 30px;
+    margin-top: 25px;
     margin-left: 2.564102564102564%;
     *margin-left: 2.5109110747408616%;
     -webkit-box-sizing: border-box;
@@ -276,8 +278,8 @@
     *width: 23.023731587561375%;
   }
   .row-fluid .span2 {
-    width: 14.52991452991453%;
-    *width: 14.476723040552828%;
+    width: 8.52991452991453%;
+    *width: 8.476723040552828%;
   }
   .row-fluid .span1 {
     width: 5.982905982905983%;

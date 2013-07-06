@@ -773,6 +773,7 @@ h2 {
 
 h3 {
     font-size: 24.5px;
+    padding: 20px 0;
 }
 
 h4 {
@@ -824,6 +825,7 @@ ol ul {
 
 li {
     line-height: 20px;
+    list-style: none;
 }
 
 ul.unstyled,
@@ -3295,6 +3297,7 @@ button.close {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+    float: right;
 }
 
 .btn-large [class^="icon-"],
@@ -3372,7 +3375,7 @@ input[type="button"].btn-block {
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-    float: right;
+    float: left;
 }
 
 .btn-primary:hover,
@@ -4614,7 +4617,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a {
     float: none;
-    padding: 10px 15px 10px;
+    padding: 23px 15px 10px;
     color: #ffffff;
     text-decoration: none;
     text-shadow: 0 1px 0 #000000;
