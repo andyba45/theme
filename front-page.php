@@ -12,14 +12,14 @@
         <!-- Carousel items -->
         <div class="carousel-inner">
             <div class="active item"><a href="test.com"><img src="<?php bloginfo('template_directory'); ?>/img/panel-wordpress.jpg" alt="Wordpress Develeopement" /></a>
-                <div class="carousel-caption"><div class="slider_button"><a class="btn btn-primary btn-large">Learn more &raquo;</a></div>
+                <div class="carousel-caption"><div class="slider_button"><a class="btn btn-primary btn-large" href="">Learn more &raquo;</a></div>
                     <h4>Wordpress Developement</h4>
-                    <p>At LAB Web Designs we specilaize in all things Wordpress. From Plugin and Theme Developement to web site recovery, we can help.</p>
+                    <p>At LAB Web Development we specialize in all things WordPress. From Plugin and Theme development to web site recovery, we can help.</p>
                 </div>
             </div>
             <div class="item"><img src="<?php bloginfo('template_directory'); ?>/img/panel-hosting.jpg" alt="" />
                 <div class="carousel-caption">
-                    <h4>Dependable &amp; Affordable Web Site Hosting</h4>
+                    <h4>Dependable &amp; Affordable Web Site Hosting</h4><div class="slider_button"><a class="btn btn-primary btn-large">Learn more &raquo;</a></div>
                     <p>Ensure that your web site is up and running 24/7. With our 99.8% uptime rate you can be sure that your customers can always get to your web site.</p>
                 </div>
             </div>
@@ -36,12 +36,49 @@
     </div>
 </div>
 
+<div class="span12 container pagination-centered">
+    <div class="row-fluid ">
+        <div class="span2"></div>
+        <div class="span8">
+            <div class="domain_select pagination-centered">
+                <form action="https://www.labwebdesigns.com/billing/order.php?step=2&amp;product=ID&amp;domain=1" method="get" name="search_domains" class="form-horizontal">
+                    <input type="hidden" name="domain" value="1" />
+                    <input type="hidden" name="step" value="2" />
+                    <input type="hidden" name="product" value="25" />
+                    <fieldset>
+
+                        <div class="control-group">
+
+                            <div class="controls span12">
+                                <h2>Start Your WordPress Web Site Today!</h2>
+                                <input id="domain_name" name="domainName" placeholder="Domain Name" class="input-xxlarge" type="text">
+                                <select id="tld" name="tld" class="input-small">
+                                    <option>com</option>
+                                    <option>net</option>
+                                    <option>org</option>
+                                    <option>biz</option>
+                                    <option>info</option>
+                                    <option>me</option>
+                                    <option>us</option>
+                                    <option>mobi</option>
+                                </select>
+                                <input type="submit" id="singlebutton" name="domain_search" value="GO" class="btn btn-success">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="span2"></div>
+    </div>
+</div>
+
 <!-- Example row of columns -->
 <div class="row">
     <div class="span4">
-        <h2>Hosting</h2>
+        <h2>Web Site Hosting</h2>
         <h4>Reliable web site hosting that is super fast!</h4>
-        <img src="http://127.0.0.1/plugin/wp-content/uploads/2013/07/hosting-front-page.jpg" alt="Web site hosting" class="fp_hosting" >
+        <img src="./wp-content/uploads/2013/07/hosting-front-page.jpg" alt="Web site hosting" class="fp_hosting" >
         <p><a class="btn btn-primary btn-med" href="https://www.labwebdesigns.com/web-hosting.html">Get Started &raquo;</a></p>
         <br />
         <br />
@@ -64,17 +101,17 @@
                     $labexcerpt = str_replace(']]>', ']]>', $labexcerpt);
                     echo $labexcerpt;
                     ?></p>
-                
-       </div>
-            <?php endforeach; ?>
- 
+
+            </div>
+        <?php endforeach; ?>
+
         <p><a class="btn btn-primary btn-med" href="http://www.labwebdesigns.com/lab-web-design-wordpress-blog.html">See More &raquo;</a></p>
         <br />
         <br />
     </div>
     <div class="span4">
         <h2>Web Developement</h2>
-        <p>Are you in need of a shopping cart? Was your web site hacked? Or are you in need of friendly, straight forward and competent <img src="http://127.0.0.1/plugin/wp-content/uploads/2013/07/php-image.jpg" class="php_image"> web developer to help make your web site come alive or back to life? Experienced in PHP,  WordPress ,  MVC Architecture, , MYSQL, jQuery, AJAX, HTML5, CSS, CSS3 & responsive design, we can help you take your web site’s functionality to the next level.</p>
+        <p>Are you in need of a shopping cart? Was your web site hacked? Or are you in need of friendly, straight forward and competent <img src="./wp-content/uploads/2013/07/php-image.jpg" class="php_image"> web developer to help make your web site come alive or back to life? Experienced in PHP,  WordPress ,  MVC Architecture, , MYSQL, jQuery, AJAX, HTML5, CSS, CSS3 & responsive design, we can help you take your web site’s functionality to the next level.</p>
         <p><a class="btn btn-primary btn-med" href="https://www.labwebdesigns.com/web-developement.html">Learn More &raquo;</a></p>
     </div>
 </div>

@@ -8,11 +8,13 @@ function wpbootstrap_scripts_with_jquery() {
     wp_register_script('custom-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array('jquery'));
     wp_register_script('carousel-script', get_template_directory_uri() . '/bootstrap/js/bootstrap-carousel.js', array('jquery'));
     wp_register_script('dropdown-script', get_template_directory_uri() . '/bootstrap/js/bootstrap-dropdown.js', array('jquery'));
+    wp_register_script('theme-js', get_template_directory_uri() . '/js/theme-js.js', array('jquery'));
     // For either a plugin or a theme, you can then enqueue the script:
 
     wp_enqueue_script('custom-script');
     wp_enqueue_script('carousel-script');
     wp_enqueue_script('dropdown-script');
+    wp_enqueue_script('theme-js');
 }
 
 add_action('wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery');

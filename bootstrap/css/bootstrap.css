@@ -4424,6 +4424,7 @@ input[type="submit"].btn.btn-mini {
     font-weight: 200;
     color: #ffffff;
     text-shadow: 0 1px 0 #000000;
+    width: 500px;
 }
 
 .navbar .brand:hover,
@@ -6115,16 +6116,19 @@ to {
 }
 
 .carousel-caption h4 {
-    margin: 0 0 5px;
+    margin: 0 0 14px ;
+    font-size: 1.6em;
 }
 
 .carousel-caption p {
     margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 1.1em;
 }
 
 .hero-unit {
     padding: 15px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     font-size: 18px;
     font-weight: 200;
     line-height: 30px;

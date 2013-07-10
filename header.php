@@ -58,7 +58,7 @@
                         <form action="/billing/index.php?fuse=admin&amp;action=Login" method="post" >
                             <input type="text" class="span2" placeholder="Login" id="email" name="email" value="" onfocus="if (this.value == 'E-Mail')
                     this.value = '';" type="text" >
-                            <input type="text" class="span2" placeholder="Password" id="passed_password" name="passed_password" value="" onfocus="if (this.value == 'password')
+                            <input type="password" class="span2" placeholder="Password" id="passed_password" name="passed_password" value="" onfocus="if (this.value == 'password')
                     this.value = '';" type="password" > 
                             <input type="submit" value="Login" class="btn"/>
                         </form>
@@ -83,5 +83,5 @@
                 </div>
             </div>
         </div>
-
+        <div class="header_vertical_space"></div>
         <div class="container">
