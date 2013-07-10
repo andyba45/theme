@@ -1,12 +1,16 @@
 <?php get_header(); ?>
-
+<script>
+        $('.carousel').carousel({
+    interval: 2000
+    })
+</script>
 <!-- Main hero unit for a primary marketing message or call to action -->
 
 <div class="hero-unit">
     <div id="myCarousel" class="carousel slide">
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="0" class="active" data-interval="6000"></li>
+            <li data-target="#myCarousel" data-slide-to="1" data-interval="6000"></li>
             <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
         </ol>
         <!-- Carousel items -->
@@ -19,7 +23,7 @@
             </div>
             <div class="item"><img src="<?php bloginfo('template_directory'); ?>/img/panel-hosting.jpg" alt="" />
                 <div class="carousel-caption">
-                    <h4>Dependable &amp; Affordable Web Site Hosting</h4><div class="slider_button"><a class="btn btn-primary btn-large">Learn more &raquo;</a></div>
+                    <h4>Dependable &amp; Affordable Web Site Hosting</h4><div class="slider_button"><a href="https://www.labwebdesigns.com/web-hosting.html" class="btn btn-primary btn-large">Learn more &raquo;</a></div>
                     <p>Ensure that your web site is up and running 24/7. With our 99.8% uptime rate you can be sure that your customers can always get to your web site.</p>
                 </div>
             </div>
@@ -31,8 +35,8 @@
             </div>-->
         </div>
         <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev" >&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next" >&rsaquo;</a>
     </div>
 </div>
 
