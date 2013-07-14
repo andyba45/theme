@@ -25,22 +25,6 @@
         <?php wp_enqueue_script ( "jquery" ); ?>
         <?php wp_head (); ?>
 
-        <script type="text/javascript">
-
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-9931717-3']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
-
-        </script>
     </head>
 
     <body>
@@ -57,31 +41,27 @@
                     <div class="navbar-search pull-right"><span style="color: #f7f7f9;">Have an Account?</span>
                         <form action="/billing/index.php?fuse=admin&amp;action=Login" method="post" >
                             <input type="text" class="span2" placeholder="Login" id="email" name="email" value="" onfocus="if (this.value == 'E-Mail')
-                    this.value = '';" type="text" >
+                                        this.value = '';" type="text" >
                             <input type="password" class="span2" placeholder="Password" id="passed_password" name="passed_password" value="" onfocus="if (this.value == 'password')
-                    this.value = '';" type="password" > 
+                                        this.value = '';" type="password" > 
                             <input type="submit" value="Login" class="btn"/>
                         </form>
                     </div>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <?php
-
-                            wp_nav_menu ( array(
-                                'menu' => 'header-menu',
-                                'depth' => 3,
-                                'container' => false,
-                                'menu_class' => 'nav',
-                                'fallback_cb' => 'wp_page_menu',
-                                //Process nav menu using our custom nav walker
-                                'walker' => new wp_bootstrap_navwalker() )
-                            );
-
-                            ?>
-                        </ul>
-                    </div><!--/.nav-collapse -->
+                    <ul class="nav pull-right">
+          <li class="dropdown" id="menuLogin">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+            <div class="dropdown-menu" style="padding:17px;">
+              <form action="/billing/index.php?fuse=admin&amp;action=Login" method="post" id="formLogin" > 
+                <input type="text" class="span2" placeholder="Login" id="email" name="email" value="" onfocus="if (this.value == 'E-Mail')
+                                        this.value = '';" type="text" placeholder="Username"> 
+                <input type="password" class="span2" placeholder="Password" id="passed_password" name="passed_password" value="" onfocus="if (this.value == 'password')
+                                        this.value = '';" type="password" placeholder="Password" ><br>
+                <button type="submit" id="btnLogin" class="btn">Login</button>
+              </form>
+            </div>
+          </li>
+        </ul>
                 </div>
             </div>
         </div>
         <div class="header_vertical_space"></div>
-        <div class="container">
