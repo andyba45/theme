@@ -4,10 +4,12 @@
   <div class="span8">
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<h1><?php the_title(); ?></h1>
-		<p><em><?php the_time('l, F jS, Y'); ?></em></p>
+		
+      <h1><?php the_title(); ?></h1>
+                
+		<span class="badge badge-success">Posted: <?php the_time('l, F jS, Y'); ?></span>
 
-	  	<?php the_content(); ?>
+                <p><?php the_content(); ?></p>
 
 	  	<hr>
 		<?php comments_template(); ?>

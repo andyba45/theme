@@ -76,7 +76,7 @@ body {
 
 .fp_hosting {
     
-    padding: 15px 0;
+    padding: 10px;
 
 }
 
@@ -116,7 +116,7 @@ body {
 
 .lab_img_right {
     float: right;
-    padding: 0px;
+    padding: 10px;
 }
 
 .header_vertical_space {
@@ -130,9 +130,26 @@ body {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+    border: #000 ridge thin;
 }
 
 .domain_select h2 {
     font-size: 1.6em;
+}
+
+.brown{
+    background-color: #302D26;
+}
+
+footer {
+    color: #7B8E04;
+}
+
+.footer-nav {
+    padding-left: 20px;
+}
+
+.questions {
+/*    margin-top: -25px;*/
 }
 

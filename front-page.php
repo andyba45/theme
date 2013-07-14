@@ -62,7 +62,7 @@
                                     <option>us</option>
                                     <option>mobi</option>
                                 </select>
-                                <input type="submit" id="singlebutton" name="domain_search" value="GO" class="btn btn-success">
+                                <input type="submit" id="singlebutton" name="domain_search" value="GO" class="btn btn-warning">
                             </div>
                         </div>
                     </fieldset>
@@ -78,7 +78,9 @@
     <div class="span4">
         <h2>Web Site Hosting</h2>
         <h4>Reliable web site hosting that is super fast!</h4>
-        <img src="./wp-content/uploads/2013/07/hosting-front-page.jpg" alt="Web site hosting" class="fp_hosting" >
+        <a href="https://www.labwebdesigns.com/web-hosting.html" ><img src="./wp-content/uploads/2013/07/hosting-front-page-brn.jpg" alt="Web Hosting" class="img-polaroid fp_hosting" ></a>
+        <br />
+        <br />
         <p><a class="btn btn-primary btn-med" href="https://www.labwebdesigns.com/web-hosting.html">Get Started &raquo;</a></p>
         <br />
         <br />
@@ -87,7 +89,7 @@
     <div class="span4">
         <h2>Whats New</h2>
         <?php
-        $postslist = get_posts('category=0&numberposts=3&order=DESC&orderby=post_date');
+        $postslist = get_posts('category=0&numberposts=2&order=DESC&orderby=post_date');
         foreach ($postslist as $post) :
             setup_postdata($post);
             ?>
@@ -111,7 +113,7 @@
     </div>
     <div class="span4">
         <h2>Web Developement</h2>
-        <p>Are you in need of a shopping cart? Was your web site hacked? Or are you in need of friendly, straight forward and competent <img src="./wp-content/uploads/2013/07/php-image.jpg" class="php_image"> web developer to help make your web site come alive or back to life? Experienced in PHP,  WordPress ,  MVC Architecture, , MYSQL, jQuery, AJAX, HTML5, CSS, CSS3 & responsive design, we can help you take your web site’s functionality to the next level.</p>
+        <p>Are you in need of a shopping cart? Was your web site hacked? Or are you in need of friendly, straight forward and competent <img src="./wp-content/uploads/2013/07/php-image-brn.jpg" class="img-polaroid lab_img_right"> web developer to help make your web site come alive or back to life? Experienced in PHP,  WordPress ,  MVC Architecture, , MYSQL, jQuery, AJAX, HTML5, CSS, CSS3 & responsive design, we can help you take your web site’s functionality to the next level.</p>
         <p><a class="btn btn-primary btn-med" href="https://www.labwebdesigns.com/web-developement.html">Learn More &raquo;</a></p>
     </div>
 </div>

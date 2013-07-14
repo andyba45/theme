@@ -53,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>         
-                    <a class="brand" href="<?php echo site_url (); ?>"><img src="<?php bloginfo ( 'template_directory' ); ?>/img/logo2.jpg" alt="LAB Web Logo" class="logo"  /><?php bloginfo ( 'name' ); ?></a>
+                    <a class="brand" href="<?php echo site_url (); ?>"><img src="<?php bloginfo ( 'template_directory' ); ?>/img/logo-brown-sm.jpg" alt="LAB Web Logo" class="logo"  /><?php bloginfo ( 'name' ); ?></a>
                     <div class="navbar-search pull-right"><span style="color: #f7f7f9;">Have an Account?</span>
                         <form action="/billing/index.php?fuse=admin&amp;action=Login" method="post" >
                             <input type="text" class="span2" placeholder="Login" id="email" name="email" value="" onfocus="if (this.value == 'E-Mail')
